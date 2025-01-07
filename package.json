@@ -1,0 +1,21 @@
+{
+  "name": "landing-page",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=./",
+    "build-root": "vite build --base=/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "mock-svg": "^1.0.0",
+    "mockjs": "^1.1.0",
+    "petite-vue": "^0.4.1",
+    "remixicon": "^4.6.0"
+  }
+}
