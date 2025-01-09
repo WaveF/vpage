@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "git:info":  "git remote -v",
     "git:reset": "git remote remove origin",
-    "git:init":  "git remote add gitee https://gitee.com/wavef/vpage-cli.git && git remote add github https://github.com/YOUR_NAME/REPO_URL.git && git push -u gitee master",
+    "git:init":  "git remote add gitee https://gitee.com/wavef/vpage.git && git remote add github https://github.com/WaveF/vpage.git && git push -u gitee master",
     "git:push":  "git push --force gitee master && git push --force github master:main"
   },
   "devDependencies": {
