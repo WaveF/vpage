@@ -4,20 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>VPage</title>
     <script src="./js/tailwindcss-jit-cdn.umd.min.js"></script>
   </head>
   <body>
-    <div id="app" v-scope>
-      <div class="w-full grid bg-gray-100 p-2">
-        <p class="w-fit text-primary-100">1111111</p>
-        <p class="w-fit text-primary-200">2222</p>
-        <p class="w-fit text-primary-300">333</p>
-        <p class="w-fit text-primary-400">44</p>
-      </div>
-      <img :src="pic">
+    <div id="app" v-scope v-cloak class="flex flex-col justify-center items-center gap-2 w-full h-full bg-white">
+      <div v-scope="Logo({image:logo})"></div>
+      <h2 class="font-medium text-2xl py-2">{{name}}</h2>
+      <ul class="flex gap-4">
+        <li v-for="item in libs">
+          <a :href="item.link" target="_blank" class="text-gray-400 duration-300 hover:text-indigo-500">{{item.name}}</a>
+        </li>
+      </ul>
     </div>
-    
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

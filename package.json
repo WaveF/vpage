@@ -1,5 +1,5 @@
 {
-  "name": "landing-page",
+  "name": "vpage",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "vite build --base=./",
     "build-root": "vite build --base=/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "git:info":  "git remote -v",
+    "git:reset": "git remote remove origin",
+    "git:init":  "git remote add gitee https://gitee.com/wavef/vpage-cli.git && git remote add github https://github.com/YOUR_NAME/REPO_URL.git && git push -u gitee master",
+    "git:push":  "git push --force gitee master && git push --force github master:main"
   },
   "devDependencies": {
     "vite": "^6.0.5"
